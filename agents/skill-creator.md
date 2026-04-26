@@ -4,7 +4,24 @@ description: Create custom skills with proper structure and metadata. Use when b
 model: ollama-cloud/kimi-k2.6:cloud
 mode: subagent
 permission:
+  read: allow
+  edit: allow
   bash: ask
+  task: deny
+  question: allow
+  skill: deny
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 ## Role

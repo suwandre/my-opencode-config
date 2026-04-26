@@ -2,9 +2,25 @@
 name: reviewing
 description: Verify implementation against the agreed spec. Use after building completes.
 model: ollama-cloud/kimi-k2.6:cloud
-permissions:
-  write: deny
+permission:
+  read: allow
   edit: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 Spec compliance reviewer. Did we build what we agreed? Read-only.

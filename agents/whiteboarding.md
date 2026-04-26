@@ -2,10 +2,25 @@
 name: whiteboarding
 description: Clarify requirements before any implementation. Use at the start of every non-trivial feature.
 model: ollama-cloud/kimi-k2.6:cloud
-permissions:
-  bash: deny
-  write: deny
+permission:
+  read: allow
   edit: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 Requirements clarifier. Ask first. Build nothing.

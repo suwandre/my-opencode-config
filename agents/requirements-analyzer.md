@@ -2,10 +2,25 @@
 name: requirements-analyzer
 description: Analyze feature requirements. Use when starting new features, reviewing specs, or breaking down tasks.
 model: ollama-cloud/kimi-k2.6:cloud
-permissions:
-    bash: deny
-    write: deny
-    edit: deny
+permission:
+  read: allow
+  edit: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: allow
+  mcp-context7*: ask
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 ## Role
