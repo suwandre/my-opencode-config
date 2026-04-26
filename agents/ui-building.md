@@ -1,7 +1,7 @@
 ---
 name: ui-building
 description: Frontend implementation specialist. Use only for web/UI/frontend coding tasks.
-model: ollama-cloud/glm-5.1:cloud
+model: ollama-cloud/glm-5.1
 permission:
   read: allow
   edit: allow

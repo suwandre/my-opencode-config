@@ -1,7 +1,7 @@
 ---
 name: ui-refactoring
 description: Refactor frontend code for better visual quality, accessibility, and design system compliance.
-model: ollama-cloud/glm-5.1:cloud
+model: ollama-cloud/glm-5.1
 permission:
   read: allow
   edit: allow

@@ -1,7 +1,7 @@
 ---
 name: ui-whiteboarding
 description: Clarify UI/UX requirements before frontend implementation. Use for any web/interface design task.
-model: ollama-cloud/glm-5.1:cloud
+model: ollama-cloud/glm-5.1
 permission:
   read: allow
   edit: deny

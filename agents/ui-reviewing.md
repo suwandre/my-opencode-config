@@ -1,7 +1,7 @@
 ---
 name: ui-reviewing
 description: Verify frontend implementation against the agreed UI spec. Use after ui-building completes.
-model: ollama-cloud/glm-5.1:cloud
+model: ollama-cloud/glm-5.1
 permission:
   read: allow
   edit: deny

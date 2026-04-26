@@ -1,7 +1,7 @@
 ---
 name: ui-code-reviewer
 description: Review frontend code for UI/UX quality, accessibility, and design system compliance. Use for any visual/UI code review.
-model: ollama-cloud/glm-5.1:cloud
+model: ollama-cloud/glm-5.1
 permission:
   read: allow
   edit: deny
