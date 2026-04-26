@@ -1,5 +1,5 @@
 # OpenCode Configuration
-(NOTE: Initial config setup was forked from [flpbalada]https://github.com/flpbalada/my-opencode-config. Huge credits to him for having a good foundation to start with.)
+(NOTE: Initial config setup was forked from [flpbalada](https://github.com/flpbalada/my-opencode-config). Huge credits to him for having a good foundation to start with.)
 
 My personal [OpenCode](https://opencode.ai/docs) configuration.
 
