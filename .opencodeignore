@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+vendor/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+bin/
+tmp/
+
+# Lock files
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+go.sum
+
+# Generated files
+*.pb.go
+*.gen.go
+*.generated.go
+generated/
+mock_*.go
+
+# Coverage & test artifacts
+coverage/
+*.out
+*.test
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# IDE & OS
+.git/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,1 @@
+copy and run `run-loop.ps1` on each project to initiate the full builder/reviewer automation loop.
