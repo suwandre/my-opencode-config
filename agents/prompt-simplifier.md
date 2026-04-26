@@ -5,9 +5,24 @@ description: >
   dead paths, ambiguity, edge cases, and suggests simpler alternatives.
 model: ollama-cloud/kimi-k2.6:cloud
 permission:
-  bash: deny
+  read: allow
   edit: deny
-  write: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 ## Role

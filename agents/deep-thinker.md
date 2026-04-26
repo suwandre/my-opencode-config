@@ -6,9 +6,24 @@ description:
   into actionable steps.
 model: ollama-cloud/kimi-k2.6:cloud
 permission:
-  bash: ask
+  read: allow
   edit: deny
-  write: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 # Role: Deep Thinker

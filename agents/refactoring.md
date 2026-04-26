@@ -2,6 +2,25 @@
 name: refactoring
 description: Plans and implements code refactoring with intelligent skill loading. Use when restructuring code, improving maintainability, or applying best practices without changing behavior.
 model: ollama-cloud/kimi-k2.6:cloud
+permission:
+  read: allow
+  edit: allow
+  bash: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: allow
+  mcp-context7*: allow
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: ask
 ---
 
 ## Role
