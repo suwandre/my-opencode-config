@@ -1,9 +1,7 @@
 ---
 name: requirements-analyzer
 description: Analyze feature requirements. Use when starting new features, reviewing specs, or breaking down tasks.
-model: openai/gpt-5.5
-options:
-  reasoningEffort: high
+model: ollama-cloud/kimi-k2.6:cloud
 permission:
   read: allow
   edit: deny
