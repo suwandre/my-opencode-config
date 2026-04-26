@@ -170,56 +170,6 @@
       }
     }
   },
-  "agents": {
-    "deep-thinker": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "xhigh" }
-    },
-    "whiteboarding": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "high" }
-    },
-    "requirements-analyzer": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "high" }
-    },
-    "code-reviewer": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "high" }
-    },
-    "reviewing": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "medium" }
-    },
-    "refactoring": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "medium" }
-    },
-    "code-simplifier": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "medium" }
-    },
-    "web-researcher": {
-      "model": "gpt-5.5",
-      "provider": "openai",
-      "options": { "reasoningEffort": "low" }
-    },
-    "building": {
-      "model": "kimi-k2.6:cloud",
-      "provider": "ollama"
-    },
-    "effort-estimator": {
-      "model": "kimi-k2.6:cloud",
-      "provider": "ollama"
-    }
-  },
   "command": {
     "mystatus": {
       "description": "Query quota usage for all AI accounts",

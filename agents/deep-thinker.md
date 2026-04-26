@@ -4,7 +4,9 @@ description:
   Structured thinking partner for complex problems. Use when facing ambiguous
   challenges, making difficult decisions, or needing to break down complexity
   into actionable steps.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: xhigh
 permission:
   read: allow
   edit: deny

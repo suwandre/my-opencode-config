@@ -1,7 +1,9 @@
 ---
 name: refactoring
 description: Plans and implements code refactoring with intelligent skill loading. Use when restructuring code, improving maintainability, or applying best practices without changing behavior.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: medium
 permission:
   read: allow
   edit: allow

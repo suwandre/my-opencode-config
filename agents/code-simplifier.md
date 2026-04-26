@@ -1,7 +1,9 @@
 ---
 name: code-simplifier
 description: Simplifies recently modified code for clarity, consistency, and maintainability without changing behavior.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: medium
 permission:
   read: allow
   edit: allow

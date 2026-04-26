@@ -1,7 +1,9 @@
 ---
 name: code-reviewer
 description: Perform focused code review by detecting smells and deep-diving concerns
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: high
 permission:
   read: allow
   edit: deny

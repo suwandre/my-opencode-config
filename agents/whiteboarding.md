@@ -1,7 +1,9 @@
 ---
 name: whiteboarding
 description: Clarify requirements before any implementation. Use at the start of every non-trivial feature.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: high
 permission:
   read: allow
   edit: deny

@@ -1,7 +1,9 @@
 ---
 name: reviewing
 description: Verify implementation against the agreed spec. Use after building completes.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: medium
 permission:
   read: allow
   edit: deny

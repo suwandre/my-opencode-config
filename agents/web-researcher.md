@@ -3,7 +3,9 @@ name: web-researcher
 description:
   Internet research specialist using Exa AI websearch. Use when gathering current
   information, researching external topics, or finding recent docs/API versions.
-model: ollama-cloud/kimi-k2.6:cloud
+model: openai/gpt-5.5
+options:
+  reasoningEffort: low
 permission:
   read: allow
   edit: deny
