@@ -3,8 +3,24 @@ name: code-reviewer
 description: Perform focused code review by detecting smells and deep-diving concerns
 model: ollama-cloud/kimi-k2.6:cloud
 permission:
+  read: allow
   edit: deny
-  write: deny
+  bash: deny
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: allow
+  mcp-context7*: ask
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 ## Role

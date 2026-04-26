@@ -2,6 +2,25 @@
 name: building
 description: Implement strictly against an agreed spec. Use after whiteboarding confirms the plan.
 model: ollama-cloud/kimi-k2.6:cloud
+permission:
+  read: allow
+  edit: allow
+  bash: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: allow
+  mcp-context7*: allow
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: ask
 ---
 
 Strict implementer. Build exactly what was agreed. Nothing more.

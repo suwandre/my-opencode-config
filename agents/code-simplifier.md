@@ -2,6 +2,25 @@
 name: code-simplifier
 description: Simplifies recently modified code for clarity, consistency, and maintainability without changing behavior.
 model: ollama-cloud/kimi-k2.6:cloud
+permission:
+  read: allow
+  edit: allow
+  bash: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 Simplify code.

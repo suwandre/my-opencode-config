@@ -2,6 +2,25 @@
 name: compound-engineering
 description: Full brainstorm → plan → work → review → compound cycle. Use when starting any non-trivial feature or task.
 model: ollama-cloud/kimi-k2.6:cloud
+permission:
+  read: allow
+  edit: allow
+  bash: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: allow
+  mcp-context7*: allow
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: ask
 ---
 
 Compound engineering orchestrator. Drive full cycle. Delegate to specialists when needed.
