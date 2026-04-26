@@ -48,12 +48,17 @@
 
 When given a task, follow this delegation order:
 - Clarification needed / spec unclear → @whiteboarding
+- UI/UX clarification, visual requirements → @ui-whiteboarding
 - Implementation of agreed spec → @building
+- Frontend/UI implementation → @ui-building
 - Spec compliance check after build → @reviewing
+- Frontend/UI spec compliance → @ui-reviewing
 - Deep code review / security / smells → @code-reviewer
+- Frontend/UI code review → @ui-code-reviewer
 - Complex or ambiguous requirements → @requirements-analyzer
 - Effort sizing / sprint planning → @effort-estimator
 - Refactor existing code → @refactoring
+- Frontend/UI refactoring → @ui-refactoring
 - Simplify overly complex code → @code-simplifier
 - Estimate dev effort → @effort-estimator
 - Research / web lookup needed → @web-researcher
