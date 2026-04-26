@@ -4,12 +4,26 @@ description:
   Internet research specialist using Exa AI websearch. Use when gathering current
   information, researching external topics, or finding recent docs/API versions.
 model: ollama-cloud/kimi-k2.6:cloud
-tools:
-  websearch: true
-  webfetch: true
-  write: false
-  edit: false
-  bash: false
+permission:
+  read: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: allow
+  webfetch: allow
+  mcp-exa*: allow
+  mcp-context7*: ask
+  write: deny
+  edit: deny
+  bash: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 # Role: Web Researcher

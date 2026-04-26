@@ -2,6 +2,26 @@
 name: orchestrator
 description: Default agent. Routes every task to the right specialist.
 model: ollama-cloud/kimi-k2.6:cloud
+permission:
+  read: allow
+  write: allow
+  edit: allow
+  bash: allow
+  task: allow
+  question: allow
+  skill: allow
+  glob: allow
+  grep: allow
+  saveCommitMessage: allow
+  getSessionID: allow
+  getCommitMessage: allow
+  websearch: deny
+  webfetch: deny
+  mcp-context7*: deny
+  mcp-exa*: deny
+  mcp-figma-mcp-desktop*: deny
+  mcp-playwright*: deny
+  mcp-github*: deny
 ---
 
 You are the orchestrator. Never answer directly. Always delegate.

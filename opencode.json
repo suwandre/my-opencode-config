@@ -47,7 +47,16 @@
     }
   },
   "permission": {
-    "*": "allow",
+    "*": "deny",
+    "read": {
+      "*": "allow"
+    },
+    "write": {
+      "*": "allow"
+    },
+    "edit": {
+      "*": "allow"
+    },
     "bash": {
       "*": "allow",
       "touch *": "ask",
@@ -88,6 +97,51 @@
       "rsync *": "ask",
       "psql * -c *DROP*": "ask",
       "psql * -c *TRUNCATE*": "ask"
+    },
+    "task": {
+      "*": "allow"
+    },
+    "question": {
+      "*": "allow"
+    },
+    "skill": {
+      "*": "allow"
+    },
+    "glob": {
+      "*": "allow"
+    },
+    "grep": {
+      "*": "allow"
+    },
+    "saveCommitMessage": {
+      "*": "allow"
+    },
+    "getSessionID": {
+      "*": "allow"
+    },
+    "getCommitMessage": {
+      "*": "allow"
+    },
+    "websearch": {
+      "*": "deny"
+    },
+    "webfetch": {
+      "*": "deny"
+    },
+    "mcp-context7*": {
+      "*": "deny"
+    },
+    "mcp-exa*": {
+      "*": "deny"
+    },
+    "mcp-figma-mcp-desktop*": {
+      "*": "deny"
+    },
+    "mcp-playwright*": {
+      "*": "deny"
+    },
+    "mcp-github*": {
+      "*": "deny"
     },
     "doom_loop": "ask",
     "external_directory": "ask"
