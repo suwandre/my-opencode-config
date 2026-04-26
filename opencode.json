@@ -122,27 +122,14 @@
     "getCommitMessage": {
       "*": "allow"
     },
-    "websearch": {
-      "*": "deny"
-    },
-    "webfetch": {
-      "*": "deny"
-    },
-    "mcp-context7*": {
-      "*": "deny"
-    },
-    "mcp-exa*": {
-      "*": "deny"
-    },
-    "mcp-figma-mcp-desktop*": {
-      "*": "deny"
-    },
-    "mcp-playwright*": {
-      "*": "deny"
-    },
-    "mcp-github*": {
-      "*": "deny"
-    },
+    "question": "allow",
+    "websearch": "deny",
+    "webfetch": "deny",
+    "mcp-context7*": "deny",
+    "mcp-exa*": "deny",
+    "mcp-figma-mcp-desktop*": "deny",
+    "mcp-playwright*": "deny",
+    "mcp-github*": "deny",
     "doom_loop": "ask",
     "external_directory": "ask"
   },

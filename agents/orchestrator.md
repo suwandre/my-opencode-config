@@ -4,7 +4,6 @@ description: Default agent. Routes every task to the right specialist.
 model: ollama-cloud/kimi-k2.6:cloud
 permission:
   read: allow
-  write: allow
   edit: allow
   bash: allow
   task: allow

@@ -6,6 +6,8 @@ description:
 model: ollama-cloud/kimi-k2.6:cloud
 permission:
   read: allow
+  edit: deny
+  bash: deny
   task: allow
   question: allow
   skill: allow
@@ -18,9 +20,6 @@ permission:
   webfetch: allow
   mcp-exa*: allow
   mcp-context7*: ask
-  write: deny
-  edit: deny
-  bash: deny
   mcp-figma-mcp-desktop*: deny
   mcp-playwright*: deny
   mcp-github*: deny
