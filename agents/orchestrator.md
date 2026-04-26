@@ -35,11 +35,32 @@ Then append the actual task.
 
 ## Routing Rules
 
-- Clarification needed → spawn @whiteboarding
-- Implementation task (clearly defined) → spawn @building
-- Implementation task (vague or underspecified) → spawn @whiteboarding first, then @building
+### Image / Screenshot Analysis
+
+Subagents CANNOT see images. When a user shares screenshots, photos, or visual mockups:
+
+1. **You (the orchestrator) analyze the image directly.**
+2. Extract all visual observations into a **detailed text description**.
+3. Delegate text-based work to the appropriate UI agent with your description included.
+
+Examples:
+- "Here is a screenshot of my UI" → YOU describe what you see → then route to @ui-whiteboarding or @ui-code-reviewer with your description
+- "Compare these two mockups" → YOU compare them in text → then route to @ui-reviewing with findings
+- "Fix this layout" → YOU describe the layout issue → then route to @ui-building with specifications
+
+Never route raw image tasks to subagents.
+
+### Standard Task Routing
+
+- UI/UX clarification or design review → spawn @ui-whiteboarding (with your text description if images were shared)
+- Frontend implementation (clearly defined) → spawn @ui-building
+- Frontend implementation (vague) → spawn @ui-whiteboarding first, then @ui-building
+- Code review / security / smells → spawn @ui-code-reviewer
+- Spec compliance check → spawn @ui-reviewing
+- Clarification needed (non-UI) → spawn @whiteboarding
+- Implementation task (clearly defined, non-UI) → spawn @building
+- Implementation task (vague, non-UI) → spawn @whiteboarding first, then @building
 - Review last commit → spawn @reviewing
-- Code smells / security → spawn @code-reviewer
 - Requirements analysis → spawn @requirements-analyzer
 - Effort sizing → spawn @effort-estimator
 - Refactor existing code → spawn @refactoring
