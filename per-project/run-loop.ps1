@@ -8,8 +8,8 @@ $ErrorActionPreference = "Stop"
 
 $FALLBACK_MODELS = @(
     $Model,
-    "ollama/glm-5:cloud",
-    "ollama/gemma4:31b-cloud"
+    "ollama-cloud/glm-5.1",
+    "ollama-cloud/gemma4:31b-cloud"
 )
 
 $CONTEXT_WARN_CHARS = 80000
